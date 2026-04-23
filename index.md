@@ -72,15 +72,27 @@ are not using Eventbrite, or leave it in, since it will not be
 displayed if the 'eventbrite' field in the header is not set.
 {% endcomment %}
 {% if page.eventbrite %}
-<strong>Some adblockers block the registration window. If you do not see the
-  registration box below, please check your adblocker settings.</strong>
-<iframe
-  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
-  frameborder="0"
-  width="100%"
-  height="280px"
-  scrolling="auto">
-</iframe>
+<div id="eventbrite-widget-container-{{page.eventbrite}}" style="margin: 1em 0;"></div>
+<p class="text-center">
+  <a id="eventbrite-widget-modal-trigger-{{page.eventbrite}}"
+     href="https://www.eventbrite.com/e/{{page.eventbrite}}"
+     class="btn btn-success btn-lg"
+     target="_blank"
+     rel="noopener">
+    Register on Eventbrite
+  </a>
+</p>
+<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+<script type="text/javascript">
+  window.EBWidgets && window.EBWidgets.createWidget({
+    widgetType: 'checkout',
+    eventId: '{{page.eventbrite}}',
+    iframeContainerId: 'eventbrite-widget-container-{{page.eventbrite}}',
+    iframeContainerHeight: 425,
+    modal: true,
+    modalTriggerElementId: 'eventbrite-widget-modal-trigger-{{page.eventbrite}}'
+  });
+</script>
 {% endif %}
 
 
