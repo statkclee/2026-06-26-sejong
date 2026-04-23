@@ -19,7 +19,7 @@ online workshops.
 {% endif %}
 
 <!doctype html>
-<html lang="en">
+<html lang="{{ page.language | default: site.lang | default: 'en' }}">
   <head>
 
     <meta name="slug" content="{{project_title}}" />

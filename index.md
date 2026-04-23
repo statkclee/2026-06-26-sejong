@@ -9,7 +9,7 @@ country: "kr"      # lowercase two-letter ISO country code such as "fr" (see htt
 language: "ko"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
 latitude: "37.550106"      # decimal latitude of workshop venue (use https://www.latlong.net/)
 longitude: "127.073171"       # decimal longitude of the workshop venue (use https://www.latlong.net)
-humandate: "June 26-27, 2026"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humandate: "Jun 26-27, 2026"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "10:00 am - 5:00 pm KST (1:00 am - 8:00 am UTC)"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
 startdate: 2026-06-26      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2026-06-27        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
@@ -17,7 +17,7 @@ instructor: ["Kwangchun Lee"] # boxed, comma-separated list of instructors' name
 helper: ["HwanHee Hyung"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["Kwangchun.lee.7@gmail.com"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes: https://pad.carpentries.org/2026-06-26-sejong # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2024-01-17-sejong)
-eventbrite:    # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+eventbrite: "1988050060247"    # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
 {% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
@@ -364,8 +364,8 @@ of code below the Schedule `<h2>` header below with
       <tr> <td>14:00</td>  <td>R for Reproducible Scientific Analysis</td> </tr>
       <tr> <td>15:30</td>  <td>Afternoon break</td> </tr>
       <tr> <td>16:00</td>  <td>R for Reproducible Scientific Analysis (Continued)</td> </tr>
-      <tr> <td>17:00</td>  <td>Wrap-up</td> </tr>
-      <tr> <td>17:30</td>  <td>END</td> </tr>
+      <tr> <td>16:30</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>17:00</td>  <td>END</td> </tr>
     </table>
   </div>
   <div class="col-md-6">
@@ -378,8 +378,8 @@ of code below the Schedule `<h2>` header below with
       <tr> <td>14:00</td>  <td>Managing Data with SQL</td> </tr>
       <tr> <td>15:30</td>  <td>Afternoon break</td> </tr>
       <tr> <td>16:00</td>  <td>Managing Data with SQL (Continued)</td> </tr>
-      <tr> <td>17:00</td>  <td>Wrap-up</td> </tr>
-      <tr> <td>17:30</td>  <td>END</td> </tr>
+      <tr> <td>16:30</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>17:00</td>  <td>END</td> </tr>
     </table>
   </div>
 </div>
